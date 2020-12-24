@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>{{ title }}</title>
+
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{{ keywords }}">
+
+    <meta property="og:site_name" content="genuinetrends.com">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.genuinetrends.com{{ page.url }}">
+    <meta property="og:image" content="{{ image }}">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@genuinetrends" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta name="twitter:image" content="{{ image }}" />
+
+    <link rel="canonical" href="{{ page.url }}">
+    {# <link rel="shortcut icon" href="http://localhost:8080/favicon.png"> #}
+  </head>
+  <body>
+    {{ content | safe }}
+  </body>
+</html>
