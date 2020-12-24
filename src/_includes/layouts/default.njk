@@ -12,7 +12,7 @@
     <meta property="og:site_name" content="genuinetrends.com">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="{{og_type}}">
     <meta property="og:url" content="https://www.genuinetrends.com{{ page.url }}">
     <meta property="og:image" content="{{ image }}">
 
@@ -22,8 +22,7 @@
     <meta name="twitter:description" content="{{ description }}" />
     <meta name="twitter:image" content="{{ image }}" />
 
-    <link rel="canonical" href="{{ page.url }}">
-    {# <link rel="shortcut icon" href="http://localhost:8080/favicon.png"> #}
+    <link rel="canonical" href="https://www.genuinetrends.com{{ page.url }}">
   </head>
   <body>
     {{ content | safe }}
