@@ -1,32 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>{{ title }}</title>
-
-    <meta name="description" content="{{ description }}">
-    <meta name="keywords" content="{{ keywords }}">
-
-    <meta property="og:site_name" content="genuinetrends.com">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:type" content="{{og_type}}">
-    <meta property="og:url" content="https://www.genuinetrends.com{{ page.url }}">
-    <meta property="og:image" content="{{ image }}">
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@genuinetrends" />
-    <meta name="twitter:title" content="{{ title }}" />
-    <meta name="twitter:description" content="{{ description }}" />
-    <meta name="twitter:image" content="{{ image }}" />
-
-    <link rel="canonical" href="https://www.genuinetrends.com{{ page.url }}">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="/assets/css/common.css">
-    <script src="/assets/js/posts.js"></script>
+    {% include "layouts/shared/head.html" %}
   </head>
   <body>
     {{ content | safe }}
