@@ -1,5 +1,3 @@
 {
-  "layout": "layouts/default.html" ,
-  "tags": "relationships",
-  "og_type": "article"
+  "tags": "relationships"
 }

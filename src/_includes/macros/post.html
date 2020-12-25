@@ -1,0 +1,21 @@
+{% macro create_iframe(url, banners) -%}
+  <iframe src="{{ url }}" onload="showBanners()" referrerpolicy="no-referrer" sandbox="allow-forms allow-same-origin allow-scripts">
+    <div class="notification is-warning">
+      <center>Your current browser is outdated.</center>
+    </div>
+  </iframe>
+{%- endmacro %}
+
+{% import "macros/banner.html" as banner %}
+
+{% macro create_banners(items) %}
+  {% for item in items %}
+    {% if item.type == "bottom_panel" %}
+      {{ banner.bottom_panel(item.params) }}
+    {% elif false %}
+      stub
+    {% else %}
+      {% include item.type + ".html" %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
