@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/default.njk" ,
+  "layout": "layouts/default.html" ,
   "tags": "relationships",
   "og_type": "article"
 }
