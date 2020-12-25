@@ -13,4 +13,12 @@ iframe {
 
 .gt-banner {
   z-index: 15555555;
+  visibility: hidden;
+}
+
+.gt-banner.bottom_panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
