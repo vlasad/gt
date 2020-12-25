@@ -6,9 +6,16 @@ description:
 keywords:
 image:
 iframe_url: https://www.healthline.com/nutrition/how-to-lose-weight-as-fast-as-possible
-iframe_url1: https://tut.by
+banners:
+  - id: b1
+    type: bottom_line
+    params:
+      width: 100px
+      height: 20px
+  - id: b2
+    type: right_conner
 ---
 {% import "macros/post.html" as post %}
 
-{{- post.banner("bottom_line") -}}
+{{- post.banners(banners) -}}
 {{- post.iframe(iframe_url) -}}

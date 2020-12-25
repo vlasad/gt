@@ -10,3 +10,7 @@ iframe {
 .hide-scrollbars {
   overflow: hidden;
 }
+
+.gt-banner {
+  z-index: 15555555;
+}

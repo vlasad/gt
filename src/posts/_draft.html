@@ -1,12 +1,21 @@
 ---
 permalink: "posts/{{ title | slug }}/"
-date: 2020-12-25
-title: ssss
+date: 2016-03-25
+title: Article Title
 description:
 keywords:
 image:
+iframe_url: https://www.healthline.com/nutrition/how-to-lose-weight-as-fast-as-possible
+banners:
+  - id: b1
+    type: bottom_line
+    params:
+      width: 100px
+      height: 20px
+  - id: b2
+    type: right_conner
 ---
-<h1>{{ title }}</h1>
-<hr>
-{{ tags }}
-{{ page.date }}
+{% import "macros/post.html" as post %}
+
+{{- post.banners(banners) -}}
+{{- post.iframe(iframe_url) -}}

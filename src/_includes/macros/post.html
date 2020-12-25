@@ -1,18 +1,13 @@
-{% macro banner(type, params) %}
-{% endmacro %}
-
-{% macro iframe(url, params) %}
-  <iframe
-  src="{{ url }}"
-  allow="fullscreen"
-  referrerpolicy="no-referrer"
-  sandbox="allow-same-origin allow-scripts"
-  onload="showBanner('bannerID')"
-  >
+{% macro iframe(url, banners) -%}
+  <iframe src="{{ url }}" onload="showBanners()" referrerpolicy="no-referrer" sandbox="allow-forms allow-same-origin allow-scripts">
     <div class="notification is-warning">
       <center>Your current browser is outdated.</center>
     </div>
   </iframe>
-{% endmacro %}
+{%- endmacro %}
 
-{# do not supported: align, frameborder, longdesc, marginheight, marginwidth и scrolling… #}
+{% macro banners(items) %}
+  {% for item in items -%}
+    {{ item.id }} : {{ item.type }} : {{ item.params['width'] }} : {{ item.params['height'] }}
+  {% endfor %}
+{%- endmacro %}
