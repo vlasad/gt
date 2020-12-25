@@ -1,0 +1,14 @@
+---
+permalink: "posts/{{ title | slug }}/"
+date: 2016-03-25
+title: Article Title
+description:
+keywords:
+image:
+iframe_url: https://www.healthline.com/nutrition/how-to-lose-weight-as-fast-as-possible
+iframe_url1: https://tut.by
+---
+{% import "macros/post.html" as post %}
+
+{{- post.banner("bottom_line") -}}
+{{- post.iframe(iframe_url) -}}
