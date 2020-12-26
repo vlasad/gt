@@ -1,6 +1,6 @@
 {% macro create(params) %}
   <div class="gt-banner bottom_panel_1">
-    <div class="container {{ params.container.classes }}" onclick="location.href='{{ params.offer_url }}';" style="cursor: pointer;">
+    <div style="{{ params.container.style }}" class="container {{ params.container.classes }}" onclick="location.href='{{ params.offer_url }}';">
       <div class="{{ params.text.classes }}">
         {{ params.text.title | safe }}
       </div>
