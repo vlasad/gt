@@ -6,7 +6,7 @@
   minify = false
 [build.processing.js]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.html]
   pretty_urls = true
 [build.processing.images]
