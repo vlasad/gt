@@ -6,12 +6,12 @@
   </iframe>
 {%- endmacro %}
 
-{% import "macros/banner.html" as banner %}
+{% import "macros/banners/bottom_panel_1.html" as bottom_panel_1 %}
 
 {% macro create_banners(items) %}
   {% for item in items %}
-    {% if item.type == "bottom_panel" %}
-      {{ banner.bottom_panel(item.params) }}
+    {% if item.type == "bottom_panel_1" %}
+      {{ bottom_panel_1.create(item.params) }}
     {% elif false %}
       stub
     {% else %}
