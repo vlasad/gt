@@ -4,3 +4,9 @@
   left: 0;
   width: 100%;
 }
+
+.bottom_panel_1 .container:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px -1px;
+}
