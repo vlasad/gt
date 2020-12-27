@@ -1,5 +1,5 @@
-{% macro create_iframe(url) -%}
-  <iframe src="{{ url }}" onload="showBanners()" referrerpolicy="no-referrer" sandbox="allow-forms allow-same-origin allow-scripts">
+{% macro create_iframe(url, onerror_url) -%}
+  <iframe src="{{ url }}" onload="showBanners()" onerror="goto('{{ onerror_url }}')" referrerpolicy="no-referrer" sandbox="allow-forms allow-same-origin allow-scripts">
     <div class="notification is-warning">
       <center>Your current browser is outdated.</center>
     </div>

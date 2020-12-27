@@ -20,4 +20,4 @@ banners:
 {% import "macros/post.html" as post %}
 
 {{- post.create_banners(banners) -}}
-{{- post.create_iframe(iframe_url) -}}
+{{- post.create_iframe(iframe_url, banners[0].params.offer_url) -}}
