@@ -5,6 +5,3 @@ function showBanners() {
     banners[i].style.visibility = 'visible';
   }
 }
-function goto(url) {
-  location.href = url;
-}

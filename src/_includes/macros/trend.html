@@ -1,5 +1,5 @@
 {% macro create_card(item) %}
-  <div class="card">
+  <div class="card" onclick="goto('{{ item.url }}');">
     <div class="card-image">
       <figure class="image">
         <img src="{{ item.data.image }}" loading="lazy">

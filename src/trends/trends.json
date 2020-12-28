@@ -1,4 +1,4 @@
 {
-  "layout": "layouts/trend.html" ,
+  "layout": "layouts/default.html" ,
   "og_type": "website"
 }
