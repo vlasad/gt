@@ -1,0 +1,12 @@
+.trend-header {
+  box-shadow: 0 0 20px -1px;
+  background-image: linear-gradient(to right, #63b752, #76c666, #89d47a, #9ce38e, #aff2a2);
+}
+
+.description-on-card {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 5px 10px;
+  font-size: 13px;
+}
