@@ -1,0 +1,19 @@
+{% macro create(params) %}
+  <div class="modal_1">
+    <div class="modal" onclick="hideModals();">
+      <div class="modal-background"></div>
+      <div class="modal-content" onclick="goto('{{ params.offer_url }}');">
+        ################
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </div>
+
+  <script>
+    addEvent(window, "beforeunload", function(e) {
+      var msg = 'You have missed something.';
+      (e || window.event).returnValue = msg;
+      return msg;
+    });
+  </script>
+{% endmacro %}
