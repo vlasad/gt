@@ -21,7 +21,3 @@ function hideModals() {
     modals[i].classList.remove("is-active");
   }
 }
-
-addEvent(document, "mouseleave", function(e) {
-  showModals();
-});
