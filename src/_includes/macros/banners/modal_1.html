@@ -8,12 +8,4 @@
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
   </div>
-
-  <script>
-    addEvent(window, "beforeunload", function(e) {
-      var msg = 'You have missed something.';
-      (e || window.event).returnValue = msg;
-      return msg;
-    });
-  </script>
 {% endmacro %}
