@@ -10,3 +10,9 @@
   margin: 5px 10px;
   font-size: 14px;
 }
+
+.card:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  box-shadow: 0 0 20px -1px;
+}

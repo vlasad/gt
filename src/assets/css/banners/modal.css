@@ -1,0 +1,7 @@
+.modal {
+  z-index: 15555556;
+}
+
+.modal-content:hover {
+  cursor: pointer;
+}
