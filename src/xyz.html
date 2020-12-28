@@ -3,7 +3,7 @@ layout: layouts/sitemap.html
 title: Site Map
 ---
 <ul>
-{%- for post in collections.all -%}
+{% for post in collections.all %}
   <li><a href="{{ post.url }}">{{ post.url }}</a></li>
-{%- endfor -%}
+{% endfor %}
 </ul>
