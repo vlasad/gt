@@ -1,0 +1,23 @@
+---
+permalink: "posts/{{ title | slug }}/"
+date: 2021-01-09
+title: 20 Ways To Break Up With Your Boyfriend
+description: The end of a relationship is invariably painful and can leave a lot of emotional collateral damage in its wake. Learn 20 ways to break up with your lover.
+keywords:
+image: https://goop-img.com/wp-content/uploads/2016/07/break-up-Stocksy_txp672e993d7O5100_Medium_6116.jpg
+iframe_url: https://goop.com/wellness/relationships/a-better-way-to-break-up-20-ways-to-leave-your-lover/
+banners:
+  - type: bottom_panel_1
+    params:
+      offer_url: /o/his-secret-obsession/
+      text:
+        title: How to make him think about you all the time? <span class="has-text-danger-dark has-text-weight-bold">Here's what science says.</span>
+        classes: has-text-black is-size-5-touch is-size-4-desktop has-text-weight-medium
+      container:
+        classes: px-4 py-3 has-text-centered is-widescreen
+        style: "background-color: #b0c9e1;"
+---
+{% import "macros/post.html" as post %}
+
+{{ post.create_banners(banners) }}
+{{ post.create_iframe(iframe_url, banners[0].params.offer_url) }}

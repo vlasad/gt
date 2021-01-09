@@ -1,0 +1,23 @@
+---
+permalink: "posts/{{ title | slug }}/"
+date: 2021-01-09
+title: Best Online Dating Profile Examples of 2021
+description: Looking for good online dating profiles to copy? I gotchu, boo, with all the online dating profile inspiration and examples you need. Here are some great, easy-to-copy dating profile examples & profile photo optimization tips for gents and ladies. Feel free to mix, match, and edit these dating profile examples.
+keywords:
+image: https://blog.photofeeler.com/wp-content/uploads/2017/04/dating-profile-examples.jpg
+iframe_url: https://blog.photofeeler.com/dating-profile-examples/
+banners:
+  - type: bottom_panel_1
+    params:
+      offer_url: /o/his-secret-obsession/
+      text:
+        title: How to make him think about you all the time? <span class="has-text-danger-dark has-text-weight-bold">Here's what science says.</span>
+        classes: has-text-black is-size-5-touch is-size-4-desktop has-text-weight-medium
+      container:
+        classes: px-4 py-3 has-text-centered is-widescreen
+        style: "background-color: #b0c9e1;"
+---
+{% import "macros/post.html" as post %}
+
+{{ post.create_banners(banners) }}
+{{ post.create_iframe(iframe_url, banners[0].params.offer_url) }}
