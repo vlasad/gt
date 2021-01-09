@@ -1,0 +1,23 @@
+---
+permalink: "posts/{{ title | slug }}/"
+date: 2021-01-09
+title: 20 Lessons From Powerful Women To Take Into 2021
+description: 2020 was different than any of us could have imagined when we made our resolutions in January. But 51 Her Agenda interviews with powerful women were there to give advice, guidance, and wisdom as we navigated through the year.
+keywords:
+image: https://admin.heragenda.com/wp-content/uploads/2020/12/Portrait-2.jpg
+iframe_url: https://heragenda.com/power-agenda/powerful-lessons-for-2021
+banners:
+  - type: bottom_panel_1
+    params:
+      offer_url: /o/his-secret-obsession/
+      text:
+        title: How to make him think about you all the time? <span class="has-text-danger-dark has-text-weight-bold">Here's what science says.</span>
+        classes: has-text-black is-size-5-touch is-size-4-desktop has-text-weight-medium
+      container:
+        classes: px-4 py-3 has-text-centered is-widescreen
+        style: "background-color: #b0c9e1;"
+---
+{% import "macros/post.html" as post %}
+
+{{ post.create_banners(banners) }}
+{{ post.create_iframe(iframe_url, banners[0].params.offer_url) }}
