@@ -2,8 +2,8 @@
   <div class="modal_1">
     <div class="modal">
       <div class="modal-background"></div>
-      <div class="modal-content" onclick="goto('{{ params.offer_url }}');">
-        ################
+      <div class="modal-content" onclick="goto('{{ params.offer_url }}');" style="width:{{ params.width }}px !important;">
+        {{ params.content | safe }}
       </div>
       <button class="modal-close is-large" aria-label="close" onclick="hideModals();"></button>
     </div>
@@ -15,7 +15,7 @@
     });
 
     {% if params.delay | default(0, true) > 0 %}
-      setTimeout(showModals, {{ params.delay }});
+      setTimeout(showModals, {{ params.delay * 1000 }});
     {% endif %}
   </script>
 {% endmacro %}

@@ -1,0 +1,27 @@
+---
+permalink: "posts/{{ title | slug }}/"
+title: Bing Main Page
+description: Some things every girl should do when dating - even if they're verging on subterfuge. Check out why.
+image: https://cdn.lifehack.org/wp-content/uploads/2014/05/lifehack-manipulativegirlthings.jpg
+iframe_url: https://www.bing.com/
+banners:
+  - type: bottom_panel_1
+    params:
+      offer_url: /go/steel-bite-pro
+      text:
+        title: Weird Bubblegum Rebuilds Gums Overnight (100% Tested and Effective)
+        classes: has-text-white is-size-4-touch is-size-4-desktop has-text-weight-medium
+      container:
+        classes: px-4 py-2 has-text-centered is-fluid
+        style: "background-color: #e37f1b;"
+  - type: modal_1
+    params:
+      offer_url: /go/steel-bite-pro
+      delay: 10
+      width: 1000
+      content: <img src="/assets/images/bubblegum_rebuilds_gums.png">
+---
+{% import "macros/post.html" as post %}
+
+{{ post.create_banners(banners) }}
+{{ post.create_iframe(iframe_url, banners[0].params.offer_url) }}
