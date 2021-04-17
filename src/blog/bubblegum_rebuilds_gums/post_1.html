@@ -1,0 +1,9 @@
+---
+title: Bing Main
+description: Some things every girl should do when dating - even if they're verging on subterfuge. Check out why.
+image: https://cdn.lifehack.org/wp-content/uploads/2014/05/lifehack-manipulativegirlthings.jpg
+iframe_url: https://www.bing.com/
+---
+{% import "macros/post.html" as post %}
+{{ post.create_banners(banners) }}
+{{ post.create_iframe(iframe_url, banners[0].params.offer_url) }}

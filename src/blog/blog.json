@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/post.html" ,
+  "og_type": "article",
+  "permalink": "blog/{{ title | slug }}/"
+}
