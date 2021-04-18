@@ -1,5 +1,5 @@
 function goto(url) {
-  location.href = url;
+  window.open(url, '_blank');
 }
 
 function addEvent(obj, evt, fn) {
