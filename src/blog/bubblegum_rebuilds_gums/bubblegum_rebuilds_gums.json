@@ -5,7 +5,7 @@
       "params": {
         "offer_url": "/go/steel-bite-pro",
         "text": {
-          "title": "Do this 60 seconds dental trick before going to bed tonight to rebuild your teeth and gums and get rid of tooth decay. --> READ",
+          "title": "Do this 60 seconds dental trick before going to bed tonight to rebuild your teeth and gums and get rid of tooth decay. --> <span style='color:#0072ee;'>READ DETAILS</span>",
           "classes": "has-text-white is-size-5-touch is-size-4-desktop has-text-weight-medium"
         },
         "container": {
@@ -18,7 +18,7 @@
       "type": "modal_1",
       "params": {
         "offer_url": "/go/steel-bite-pro",
-        "delay": 10,
+        "delay": 20,
         "content": "<img src=\"/assets/images/bubblegum_rebuilds_gums.png\">"
       }
     }
