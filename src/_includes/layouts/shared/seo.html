@@ -1,13 +1,15 @@
 <meta name="description" content="{{ description }}">
 
-<meta property="og:site_name" content="genuinetrends.com">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:type" content="{{og_type}}">
 <meta property="og:image" content="{{ image }}">
+
 {% if iframe_url %}
+  <meta property="og:site_name" content="{{ iframe_url }}">
   <meta property="og:url" content="{{ iframe_url }}">
 {% else %}
+  <meta property="og:site_name" content="genuinetrends.com">
   <meta property="og:url" content="https://www.genuinetrends.com{{ page.url }}">
 {% endif %}
 
