@@ -4,8 +4,12 @@
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:type" content="{{og_type}}">
-<meta property="og:url" content="https://www.genuinetrends.com{{ page.url }}">
 <meta property="og:image" content="{{ image }}">
+{% if iframe_url %}
+  <meta property="og:url" content="{{ iframe_url }}">
+{% else %}
+  <meta property="og:url" content="https://www.genuinetrends.com{{ page.url }}">
+{% endif %}
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@genuinetrends" />
