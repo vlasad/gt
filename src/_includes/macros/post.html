@@ -8,6 +8,7 @@
 
 {% import "macros/banners/bottom_panel_1.html" as bottom_panel_1 %}
 {% import "macros/banners/modal_1.html" as modal_1 %}
+{% import "macros/banners/social_1.html" as social_1 %}
 
 {% macro create_banners(items) %}
   {% for item in items %}
@@ -15,6 +16,8 @@
       {{ bottom_panel_1.create(item.params) }}
     {% elif item.type == "modal_1" %}
       {{ modal_1.create(item.params) }}
+    {% elif item.type == "social_1" %}
+      {{ social_1.create(item.params) }}
     {% else %}
       {% include item.type + ".html" %}
     {% endif %}
