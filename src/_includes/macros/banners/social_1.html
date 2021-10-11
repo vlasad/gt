@@ -1,0 +1,10 @@
+{% macro create(params) %}
+  <div class="gt-banner social_1" style="{{ params.style }}">
+    <img src="{{ params.image }}">
+    <span class="{{ params.message.class }}">
+      {{ params.message.text | safe }}
+    </span>
+    <br>
+    <a class="button {{ params.button.class }}" href="{{ params.offer_url }}" target="_blank">{{ params.button.text }}</a>
+  </div>
+{% endmacro %}
